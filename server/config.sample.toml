@@ -1,8 +1,0 @@
-[influxdb]
-host = "127.0.0.1"
-port = "8086"
-token = "mytoken"
-organization = "myorg"
-bucket = "mybucket"
-tls = false
-verify_tls = false

@@ -8,7 +8,7 @@ import { Recorder } from './features/recorder/Recorder';
 import { Models } from './features/models/Models';
 import { connectMicrobitDevice, disconnectMicrobit } from './uBit/uBit';
 import { Model } from './features/models/Model';
-import Tracker from './tracker/Tracker';
+import Respiration from './respiration/Respiration';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,8 +37,8 @@ function App() {
           <Route exact path="/models">
             <Models />
           </Route>
-          <Route exact path="/tracker" >
-            <Tracker/>
+          <Route exact path="/respiration" >
+            <Respiration/>
           </Route>
           <Route exact path="/model/:id" component={Model} />
           <Route path="/">
@@ -65,9 +65,9 @@ function RecordHeader() {
             Microbit
           </Button>
         </Link>
-        <Link to="/tracker" className={classes.link}>
+        <Link to="/respiration" className={classes.link}>
           <Button color="inherit">
-            Tracker
+          Respiration
           </Button>
         </Link>
         <Link to="/models" className={classes.link}>
